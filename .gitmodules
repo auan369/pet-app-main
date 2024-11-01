@@ -1,0 +1,6 @@
+[submodule "pet-app-backend"]
+	path = pet-app-backend
+	url = https://github.com/auan369/pet-app-backend.git
+[submodule "pet-app-frontend"]
+	path = pet-app-frontend
+	url = https://github.com/auan369/pet-app-frontend.git
