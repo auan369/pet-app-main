@@ -20,6 +20,7 @@ The Pet App allows users to:
 - Interact with a virtual pet by feeding, playing, and cleaning it.
 - Monitor the pet's health, hunger, and happiness in real-time.
 - Authenticate and securely manage user sessions with JWT.
+- Engage in mini-games, like the Memory Game, that impact pet stats such as happiness.
   
 The backend updates the pet’s state every few minutes, and the frontend fetches data periodically to provide real-time updates.
 
@@ -29,6 +30,8 @@ The backend updates the pet’s state every few minutes, and the frontend fetche
 
 - **Pet Lifecycle**: Tracks and updates pet hunger, health, happiness, and cleanliness.
 - **Authentication**: Users can securely log in to manage their pet.
+- **Mini-games**: Includes a Memory Game that influences the pet's happiness when completed successfully.
+- **Pet Dashboard**: Displays the pet’s current status and real-time feedback on its needs (e.g., hunger, happiness).
 - **Tamagochi UI Elements**: Real-time indicators for pet health and status, and console-like interactive elements.
 
 ### Tech Stack
@@ -54,17 +57,17 @@ Each directory (pet-app-backend and pet-app-frontend) is a separate GitHub repos
 
 ### Prerequisites
 
-Node.js (v14+)
-MongoDB (local or cloud instance)
-Vercel CLI (optional, for deployment)
-Git
+- Node.js (v14+)
+- MongoDB (local or cloud instance)
+- Vercel CLI (optional, for deployment)
+- Git
 
 #### 1. Clone the Repository
 
 Clone this main repository, which includes both frontend and backend as submodules:
 
 ```bash
-git clone --recurse-submodules <your-main-repo-url>
+git clone --recurse-submodules <https://github.com/auan369/pet-app-main.git>
 ```
 
 Navigate to the main directory:
@@ -91,7 +94,7 @@ Create a .env file in the backend folder and add your environment variables as s
 Navigate to the frontend directory and install dependencies:
 
 ```bash
-cd ../frontend
+cd ../pet-app-frontend
 npm install
 ```
 
@@ -117,15 +120,15 @@ Your app should now be running on localhost:3000 (frontend) and localhost:4000 (
 
 ## Frontend
 
-The frontend is a React app that provides the user interface and communicates with the backend API. For more details, see the Frontend README.
+The frontend is a React app that provides the user interface and communicates with the backend API. For more details, see the [Frontend README](./pet-app-frontend/README.md).
 
 ## Backend
 
-The backend is an Express.js server that handles user authentication, pet data management, and periodic updates to the pet’s state. For more details, see the Backend README.
+The backend is an Express.js server that handles user authentication, pet data management, and periodic updates to the pet’s state. For more details, see the [Backend README](./pet-app-backend/README.md).
 
 ## Demo
 
 A live demo of the app is available here:
 
-Frontend (User Interface)
-Backend (API)
+[Frontend (User Interface)](https://pet-app-frontend-drab.vercel.app/)
+[Backend (API)](https://pet-app-backend-gamma.vercel.app/)
